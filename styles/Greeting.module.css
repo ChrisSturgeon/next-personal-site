@@ -1,0 +1,111 @@
+.greeting {
+  display: flex;
+  justify-content: center;
+  /* padding: 2em 10em; */
+  padding: 1em;
+}
+
+.greeting h1 {
+  position: relative;
+  /* color: black; */
+  padding: 0.25em;
+  font-size: 5rem;
+  animation-name: text-change;
+  animation-duration: 3s;
+  color: #010b40;
+  /* animation-delay: 500ms; */
+}
+
+.greeting h1::before {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  content: '';
+  background-color: #1ed96f;
+  /* backdrop-filter: blur(10px); */
+  height: 20%;
+  animation-name: underline;
+  animation-duration: 3s;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.greeting h1::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  content: '';
+  background-color: #17bf60;
+  height: 20%;
+  animation-name: underline-reverse;
+  animation-duration: 3s;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  /* z-index: -20; */
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+@keyframes underline {
+  0% {
+    left: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+  20% {
+    width: 100%;
+    height: 60%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+    right: 0;
+    border-radius: 0.25rem;
+  }
+}
+
+@keyframes underline-reverse {
+  0% {
+    right: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+  20% {
+    /* left: 0; */
+    width: 100%;
+    height: 40%;
+  }
+
+  80% {
+    width: 100%;
+    /* right: 0; */
+  }
+
+  100% {
+    width: 0%;
+    left: 0;
+    border-radius: 0.25rem;
+  }
+}
+
+@keyframes text-change {
+  0% {
+    color: transparent;
+  }
+
+  45% {
+    color: transparent;
+  }
+
+  100% {
+    color: #010b40;
+  }
+}
