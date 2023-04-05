@@ -24,7 +24,7 @@ export default function Home() {
               <motion.h1 transition={{ delay: 0.9 }} animate={{ opacity: 1 }}>
                 Hello!
               </motion.h1>
-              <p>I'm Chris. A front end developer.</p>
+              <p>I'm Chris Sturgeon. A front end developer.</p>
               <nav>
                 <Link href="/about">About</Link>
                 <Link href="/projects">Projects</Link>
@@ -35,8 +35,6 @@ export default function Home() {
             <div className={styles.headshotWrapper}>
               <Image
                 src={'/imgs/headshot-modified.png'}
-                // width={300}
-                // height={200}
                 fill={true}
                 alt="Chris Sturgeon Headshot"
                 priority={true}

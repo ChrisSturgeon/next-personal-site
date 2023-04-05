@@ -1,7 +1,76 @@
-.about {
+.wrapper {
+  min-height: 100%;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper > div {
+  width: clamp(200px, 100%, 53em);
+}
+
+.wrapper h1 {
+  margin-bottom: 0.5em;
+}
+
+.wrapper p {
+  line-height: 2;
+}
+
+.wrapper p:nth-of-type(2) {
+  margin-block: 1em;
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+.wrapper h2 {
+  margin-block: 0.5em;
+}
+
+.wrapper .skills h2 span {
+  color: var(--light-green);
+}
+
+.wrapper .skills {
   /* background-color: red; */
-  height: 300vh;
-  padding: 1em;
-  /* overflow-y: clip; */
-  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* justify-content: space-around; */
+  gap: 1em;
+}
+
+.wrapper .skills div {
+  min-width: 302.44px;
+}
+
+@media only screen and (min-width: 550px) {
+  /* .wrapper .skills {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  } */
+}
+
+.wrapper .skills ul {
+  line-height: 2;
+  padding-left: 1em;
+  /* list-style-position: inside; */
+}
+
+.wrapper .skills ul li {
+  /* font-size: 1.2rem; */
+  /* font-weight: 500; */
+}
+
+.wrapper .skills ul li::marker {
+  /* color: var(--light-green); */
+  /* font-size: 2rem; */
+  margin-right: 0;
+  /* transform: scale(2); */
+  padding: 0;
 }

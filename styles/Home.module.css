@@ -40,6 +40,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 10% 1fr;
+  z-index: 10000;
   /* position: relative; */
 }
 
@@ -81,6 +82,8 @@
 
 .right nav a {
   /* transition: color 250ms ease-in; */
+  /* color: var(--dark-green); */
+  /* color: rgba(255, 255, 255, 0.951); */
 }
 
 .right nav a:hover {
@@ -123,6 +126,7 @@
 
   .right h1 {
     font-size: 8em;
+    /* color: rgba(255, 255, 255, 0.886); */
   }
 
   .right nav {
