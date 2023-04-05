@@ -1,0 +1,19 @@
+.wrapper {
+  /* background-color: red; */
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.059); */
+  /* border-bottom: 1px solid rgb(221, 220, 220); */
+}
+
+.wrapper > a:first-of-type {
+  font-size: 1.1rem;
+  font-weight: 700;
+}

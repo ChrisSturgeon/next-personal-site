@@ -6,7 +6,7 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-import Navbar from './Navbar/Navbat';
+import Navbar from './Navbar/Navbar';
 
 const variants = {
   initialState: {
@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       className={inter.className}
     >
       <Navbar />
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait" initial={true}>
         <motion.main
           key={router.route}
           initial="initialState"
@@ -52,7 +52,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {children}
         </motion.main>
       </AnimatePresence>
-      <div>I'm the footer</div>
     </div>
   );
 }

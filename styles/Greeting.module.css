@@ -21,8 +21,7 @@
   display: inline-block;
   bottom: 0;
   content: '';
-  background-color: #1ed96f;
-  /* backdrop-filter: blur(10px); */
+  background-color: var(--light-green);
   height: 20%;
   animation-name: underline;
   animation-duration: 3s;
@@ -37,7 +36,7 @@
   display: inline-block;
   top: 0;
   content: '';
-  background-color: #17bf60;
+  background-color: var(--medium-green);
   height: 20%;
   animation-name: underline-reverse;
   animation-duration: 3s;

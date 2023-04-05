@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Greeting from '@/components/Greeting/Greeting';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
+import HeadShot from '../imgs/headshot-modified.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,20 +17,40 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        {/* <AnimatePresence>
-          <motion.h1
-            transition={{ delay: 0.4 }}
-            animate={{ fontSize: '5rem' }}
-            className={styles.greeting}
-            initial={true}
-          >
-            Hello!
-          </motion.h1>
-        </AnimatePresence> */}
-        <Greeting />
-        <Link href="/about">Visit the about page </Link>
-      </div>
+      <AnimatePresence>
+        <motion.div className={styles.wrapper} initial={true}>
+          <div className={styles.right}>
+            <div>
+              <motion.h1 transition={{ delay: 0.9 }} animate={{ opacity: 1 }}>
+                Hello!
+              </motion.h1>
+              <p>I'm Chris. A front end developer.</p>
+              <nav>
+                <Link href="/about">About</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/contact">Contact</Link>
+              </nav>
+            </div>
+            <div className={styles.headshotWrapper}>
+              <Image
+                src={'/imgs/headshot-modified.png'}
+                // width={300}
+                // height={200}
+                fill={true}
+                alt="Chris Sturgeon Headshot"
+                priority={true}
+              />
+            </div>
+
+            <motion.div
+              className={styles.background}
+              transition={{ delay: 0.4 }}
+              animate={{ transform: 'translateX(0)' }}
+            ></motion.div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }
