@@ -1,0 +1,38 @@
+.project {
+  background-color: pink;
+  /* position: relative; */
+  /* min-height: 600px; */
+  /* width: 100%; */
+  /* min-height: 250px; */
+  /* display: grid; */
+  /* min-height: 400px;
+  grid-template-rows: auto auto 1fr; */
+  /* min-height: 300px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  max-width: 100%;
+}
+.project .imageWrapper {
+  background-color: red;
+  /* min-height: 400px; */
+  /* width: 100%; */
+  /* min-height: 500px; */
+  /* position: relative;
+  height: inherit;
+  min-height: 300px; */
+  /* aspect-ratio: 4 / 2; */
+}
+
+.project div img {
+  /* margin-block: 1em; */
+  /* object-fit: contain;
+  object-position: top; */
+  /* max-width: 100%; */
+  /* min-height: 1000px; */
+  /* aspect-ratio: 1 / 1; */
+  object-fit: scale-down;
+  /* max-width: 100%; */
+}

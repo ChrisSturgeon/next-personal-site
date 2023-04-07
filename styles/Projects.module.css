@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+.wrapper .projects {
+  min-height: 100vh;
+  width: clamp(200px, 100%, 53em);
+  /* background-color: pink; */
+}
+
+.wrapper .projects .column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.wrapper .projects h1 {
+  text-align: center;
+}

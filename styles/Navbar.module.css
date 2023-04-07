@@ -12,6 +12,42 @@
 }
 
 .wrapper > a:first-of-type {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.wrapper .barLinks {
+  display: none;
+}
+
+.wrapper .mobile {
+  position: fixed;
+  background-color: var(--light-green);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
+  transform: translateX(-50vw);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper .mobile a {
+  font-size: 3rem;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper .barLinks {
+    display: flex;
+    gap: 2em;
+  }
+
+  .wrapper button {
+    display: none;
+  }
 }
