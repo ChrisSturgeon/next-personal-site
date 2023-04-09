@@ -12,12 +12,12 @@ export default function Projects() {
           {projectsData.map((project, index) => {
             if (index === 0) {
               return (
-                <AnimatePresence initial={false}>
-                  <Project key={project.about} project={project} />;
+                <AnimatePresence key={project.name} initial={false}>
+                  <Project project={project} />;
                 </AnimatePresence>
               );
             } else {
-              return <Project key={project.about} project={project} />;
+              return <Project key={project.name} project={project} />;
             }
           })}
         </div>

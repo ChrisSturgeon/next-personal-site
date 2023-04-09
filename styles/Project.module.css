@@ -1,38 +1,62 @@
 .project {
-  background-color: pink;
-  /* position: relative; */
-  /* min-height: 600px; */
-  /* width: 100%; */
-  /* min-height: 250px; */
-  /* display: grid; */
-  /* min-height: 400px;
-  grid-template-rows: auto auto 1fr; */
-  /* min-height: 300px; */
-  display: flex;
+  position: relative;
+  padding: 2em;
   flex-direction: column;
+  border-radius: 5px;
+}
+
+.project::after {
+  position: absolute;
+  content: '';
+  width: 75%;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -1em;
+}
+
+.project h2 {
+  margin-bottom: 0.5em;
 }
 
 .project img {
   max-width: 100%;
-}
-.project .imageWrapper {
-  background-color: red;
-  /* min-height: 400px; */
-  /* width: 100%; */
-  /* min-height: 500px; */
-  /* position: relative;
-  height: inherit;
-  min-height: 300px; */
-  /* aspect-ratio: 4 / 2; */
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.project div img {
-  /* margin-block: 1em; */
-  /* object-fit: contain;
-  object-position: top; */
-  /* max-width: 100%; */
-  /* min-height: 1000px; */
-  /* aspect-ratio: 1 / 1; */
-  object-fit: scale-down;
-  /* max-width: 100%; */
+.project .content {
+  padding: 0 1em;
+}
+
+.project p {
+  line-height: 1.75;
+  margin-block: 1em;
+}
+
+.project ul {
+  list-style-position: inside;
+  line-height: 1.75;
+}
+
+.project .links {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1em;
+}
+
+.project .links a {
+  min-width: 100px;
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.project .links a:hover {
+  background-color: black;
+  color: white;
 }

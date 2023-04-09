@@ -8,6 +8,8 @@ interface ProjectProps {
     screenshot: string;
     about: string;
     challenges: string[];
+    live: string;
+    repo: string;
   };
 }
 
@@ -37,7 +39,6 @@ export default function Project({ project }: ProjectProps) {
       className={styles.project}
     >
       <h2>{project.name}</h2>
-      <div className={styles.imageWrapper}></div>
       <img src={project.screenshot}></img>
       <div className="content">
         <p> {project.about}</p>
@@ -49,6 +50,14 @@ export default function Project({ project }: ProjectProps) {
             })}
           </ul>
         )}
+        <div className={styles.links}>
+          <a href={project.live} target="__blank">
+            View Live
+          </a>
+          <a href={project.repo} target="__blank">
+            View Repo
+          </a>
+        </div>
       </div>
     </motion.div>
   );
