@@ -34,20 +34,12 @@
   color: white;
 }
 
-.content nav a:hover {
-  /* color: white; */
-  /* outline: 1px solid white; */
-  /* outline-offset: 0.25em;
-  color: black;
-  background-color: white; */
-}
-
 .content nav a {
   position: relative;
 }
 
 .content nav a:hover {
-  color: rgba(0, 0, 0, 0.894);
+  color: rgba(0, 0, 0, 0.823);
 }
 
 .content nav a:hover::after {

@@ -31,10 +31,6 @@ export default function Navbar() {
   const router = useRouter();
   const currentPath = router.pathname;
 
-  // useEffect(() => {
-  //   console.log(router.pathname);
-  // }, []);
-
   function toggleNav() {
     setShowMobile(!showMobile);
   }
