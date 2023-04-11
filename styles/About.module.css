@@ -19,6 +19,21 @@
 
 .wrapper h1 {
   text-align: center;
+  position: relative;
+}
+
+.wrapper h1::after {
+  /* content: '';
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  transform: translateX(-180px);
+  transform: rotate(10deg);
+  background-color: red; */
+  /* 
+  top: 0;
+  left: 50%; */
+  /* z-index: -2; */
 }
 
 .wrapper h2 {

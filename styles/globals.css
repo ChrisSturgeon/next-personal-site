@@ -29,6 +29,8 @@ body {
   background-attachment: tranparent;
   min-height: 100vh;
   min-height: 100dvh;
+  background-image: linear-gradient(to top, #f9fcff 0%, white 100%);
+  background-attachment: fixed;
 }
 
 a {
