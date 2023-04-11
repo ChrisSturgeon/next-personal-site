@@ -19,34 +19,38 @@ export default function Home() {
       </Head>
       <AnimatePresence>
         <motion.div className={styles.wrapper} initial={true}>
-          <div className={styles.right}>
+          <div className={styles.content}>
             <div>
               <motion.h1 transition={{ delay: 0.9 }} animate={{ opacity: 1 }}>
                 Hello!
               </motion.h1>
-              <p>I'm Chris Sturgeon. A front end developer.</p>
-              <nav>
-                <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/contact">Contact</Link>
-              </nav>
+              <p>I'm Chris Sturgeon. A front end developer from the UK.</p>
             </div>
+            <nav>
+              <Link href="/about">About</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/contact">Contact</Link>
+            </nav>
             <div className={styles.headshotWrapper}>
               <Image
                 src={'/imgs/headshot-modified.png'}
                 fill={true}
                 alt="Chris Sturgeon Headshot"
                 priority={true}
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+                placeholder="blur"
+                blurDataURL={'/imgs/headshot-modified.png'}
               />
             </div>
-
-            <motion.div
-              className={styles.background}
-              transition={{ delay: 0.4 }}
-              animate={{ transform: 'translateX(0)' }}
-            ></motion.div>
           </div>
+          <motion.div
+            className={styles.background}
+            transition={{ delay: 0.4 }}
+            animate={{ left: '0vw' }}
+          ></motion.div>
         </motion.div>
       </AnimatePresence>
     </>

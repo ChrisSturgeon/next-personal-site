@@ -1,6 +1,5 @@
 .project {
   position: relative;
-  padding: 2em;
   flex-direction: column;
   border-radius: 5px;
 }
@@ -13,11 +12,19 @@
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: -1em;
+  bottom: -1.5em;
+}
+
+.project:last-of-type::after {
+  border-bottom: none;
 }
 
 .project h2 {
   margin-bottom: 0.5em;
+}
+
+.project h2:first-of-type {
+  margin-top: 1em;
 }
 
 .project img {
@@ -43,7 +50,7 @@
 .project .links {
   display: flex;
   justify-content: space-around;
-  margin-block: 1em;
+  margin-block: 2em;
 }
 
 .project .links a {

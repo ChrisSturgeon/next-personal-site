@@ -7,13 +7,12 @@
 .wrapper .projects {
   min-height: 100vh;
   width: clamp(200px, 100%, 53em);
-  /* background-color: pink; */
 }
 
 .wrapper .projects .column {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 
 .wrapper .projects h1 {

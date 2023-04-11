@@ -1,6 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import styles from '@/styles/Layout.module.css';
 
 import { Inter } from 'next/font/google';
 
@@ -33,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       style={{
         minHeight: '100vh',
         display: 'grid',
-        gridTemplateRows: 'auto 1fr auto',
+        gridTemplateRows: '50px 1fr',
       }}
       className={inter.className}
     >

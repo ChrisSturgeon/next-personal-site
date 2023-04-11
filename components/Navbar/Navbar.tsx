@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+
 import styles from '@/styles/Navbar.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -26,6 +28,12 @@ const slideOut = {
 
 export default function Navbar() {
   const [showMobile, setShowMobile] = useState(false);
+  const router = useRouter();
+  const currentPath = router.pathname;
+
+  // useEffect(() => {
+  //   console.log(router.pathname);
+  // }, []);
 
   function toggleNav() {
     setShowMobile(!showMobile);
@@ -35,11 +43,36 @@ export default function Navbar() {
     <nav className={styles.wrapper}>
       <Link href="/">Chris Sturgeon</Link>
       <div className={styles.barLinks}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/contact">Contact</Link>
+        <Link
+          href="/"
+          className={currentPath === '/' ? styles.active : undefined}
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className={currentPath === '/about' ? styles.active : undefined}
+        >
+          About
+        </Link>
+        <Link
+          href="/projects"
+          className={currentPath === '/projects' ? styles.active : undefined}
+        >
+          Projects
+        </Link>
+        <Link
+          href="/blog"
+          className={currentPath === '/blog' ? styles.active : undefined}
+        >
+          Blog
+        </Link>
+        <Link
+          href="/contact"
+          className={currentPath === '/contact' ? styles.active : undefined}
+        >
+          Contact
+        </Link>
       </div>
       <button onClick={toggleNav}>M</button>
       <AnimatePresence>

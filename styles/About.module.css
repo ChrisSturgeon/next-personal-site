@@ -1,16 +1,12 @@
 .wrapper {
   min-height: 100%;
-  padding: 2em 1em;
   display: flex;
   justify-content: center;
 }
 
 .wrapper > div {
   width: clamp(200px, 100%, 53em);
-}
-
-.wrapper h1 {
-  margin-bottom: 0.5em;
+  padding: 2em 1em;
 }
 
 .wrapper p {
@@ -18,7 +14,7 @@
 }
 
 .wrapper p:nth-of-type(2) {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .wrapper h1 {
@@ -31,12 +27,14 @@
 
 .wrapper .skills div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-columns: repeat(auto-fit, clamp(50px, 100%, 80px));
   gap: 1em;
+  justify-content: center;
 }
 
 .wrapper .skills h2 {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .wrapper .skills svg {
