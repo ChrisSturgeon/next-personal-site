@@ -50,6 +50,14 @@ li {
   list-style-position: inside;
 }
 
+pre {
+  min-width: -webkit-fill-available;
+  min-width: -moz-available;
+  min-width: stretch;
+  max-width: 0;
+  overflow: auto;
+}
+
 /**
  * MIT License
  * Copyright (c) 2018 Sarah Drasner

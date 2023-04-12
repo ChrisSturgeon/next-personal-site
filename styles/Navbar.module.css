@@ -31,6 +31,10 @@
   text-underline-offset: 17px;
 }
 
+.wrapper a:hover:first-of-type {
+  text-decoration: none;
+}
+
 .wrapper .mobile {
   position: fixed;
   background-color: black;

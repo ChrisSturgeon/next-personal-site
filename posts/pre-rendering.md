@@ -18,3 +18,12 @@ function greeting(foo, bar) {
   )
 }
 ```
+
+```javascript
+console.log(squareNumber(5));
+// Gives the error: "ReferenceError: Cannot access 'squareNumber' before initialization"
+
+const squareNumber = function (num) {
+  return num * num;
+};
+```
