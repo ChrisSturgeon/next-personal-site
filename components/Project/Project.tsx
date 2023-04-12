@@ -38,10 +38,10 @@ export default function Project({ project }: ProjectProps) {
       className={styles.project}
     >
       <h2>{project.name}</h2>
+      <p> {project.about}</p>
       <img src={project.screenshot}></img>
       <div className="content">
-        <p> {project.about}</p>
-        <p>Challenges overcome include:</p>
+        <p>Challenges overcome included:</p>
         {project.challenges && (
           <ul>
             {project.challenges.map((challenge) => {

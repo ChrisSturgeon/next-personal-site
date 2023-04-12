@@ -26,7 +26,7 @@ export default function Blog({ allPostsData }: allPostsProps) {
   return (
     <>
       <Head>
-        <title>Chris Sturgeon Blog</title>
+        <title>Chris Sturgeon - Blog</title>
       </Head>
       <div className={styles.wrapper}>
         <div>
