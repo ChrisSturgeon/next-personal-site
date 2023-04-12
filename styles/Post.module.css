@@ -10,9 +10,33 @@
   width: clamp(200px, 100%, 53em);
 }
 
+.post h1 {
+  font-size: 2rem;
+  margin-top: 0.5em;
+}
+
+.post h2 {
+  margin-top: 1em;
+}
+
+.post h3 {
+  margin-block: 1em;
+}
+
+.post time {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-style: italic;
+}
+
 .post p {
   margin-block: 1em;
   line-height: 1.75;
+}
+
+.post p:last-of-type {
+  margin-bottom: 2em;
 }
 
 .post li {
@@ -22,4 +46,13 @@
 
 .post li::marker {
   margin-right: 50px;
+}
+
+.post p > code,
+.post li code {
+  font-family: var(--font-mono);
+  background-color: rgb(220, 220, 220);
+  padding: 2px 4px;
+  font-size: 1rem;
+  border-radius: 3px;
 }

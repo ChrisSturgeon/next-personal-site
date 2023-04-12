@@ -1,15 +1,9 @@
 import Link from 'next/link';
-
+import styles from '@/styles/BlogIndex.module.css';
 import { getSortedPostsData } from '@/lib/posts';
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+import { GetStaticProps } from 'next';
+import Head from 'next/head';
+import Date from '@/components/Date/Date';
 
 interface allPostsProps {
   allPostsData: {
@@ -19,22 +13,47 @@ interface allPostsProps {
   }[];
 }
 
+export const getStaticProps: GetStaticProps = async ({}) => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+};
+
 export default function Blog({ allPostsData }: allPostsProps) {
   return (
-    <div>
-      <h1>
-        <ul>
-          {allPostsData.map((post) => {
-            return (
-              <li key={post.id}>
-                <Link href={`/blog/${post.id}`}>{post.title}</Link>
-                <p>{post.id}</p>
-                <p>{post.date}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </h1>
-    </div>
+    <>
+      <Head>
+        <title>Chris Sturgeon Blog</title>
+      </Head>
+      <div className={styles.wrapper}>
+        <div>
+          <h1>Blog</h1>
+          <p>
+            Welcome to my blog. My aim is to write about all things related to
+            coding. Posts could be JavaScript specific, general programming
+            concepts, career development, or anything else that happens to pop
+            into my brain.
+          </p>
+          <p>Check out these recent posts:</p>
+          <ul>
+            {allPostsData.map((post) => {
+              return (
+                <li key={post.id}>
+                  <Link href={`/blog/${post.id}`}>
+                    <div>
+                      <span>{post.title}</span> posted{' '}
+                      <Date dateString={post.date} />
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }

@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.wrapper > div {
+  width: clamp(200px, 100%, 53em);
+}
+
+.wrapper > div h1 {
+  margin-block: 0.5em;
+}
+
+.wrapper > div p {
+  margin-block: 0.5em;
+  line-height: 1.75;
+}
+
+.wrapper > div ul {
+  margin-block: 1em;
+}
+
+.wrapper li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.wrapper ul li a div span {
+  font-weight: 600;
+}

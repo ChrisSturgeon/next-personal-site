@@ -22,16 +22,16 @@
 }
 
 .active {
-  text-decoration: underline 3px solid black;
-  text-underline-offset: 17px;
+  text-decoration: underline 3px solid var(--light-green);
+  text-underline-offset: 16px;
 }
 
 .wrapper a:hover {
-  text-decoration: underline 3px solid black;
-  text-underline-offset: 17px;
+  text-decoration: underline 3px solid var(--light-green);
+  text-underline-offset: 16px;
 }
 
-.wrapper a:hover:first-of-type {
+.wrapper > a:hover:first-of-type {
   text-decoration: none;
 }
 

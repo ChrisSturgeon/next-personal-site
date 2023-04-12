@@ -1,9 +1,8 @@
 ---
 title: 'Function Expressions and Declarations'
-date: '2020-01-01'
+keywords: 'functions'
+date: '2022-12-04'
 ---
-
-## Function Declarations vs Expressions
 
 In this post we're going to look at function **declarations** and function **expressions** in JavaScript, and when to use one instead the other.
 
