@@ -1,0 +1,25 @@
+.postWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.post {
+  width: clamp(200px, 100%, 53em);
+}
+
+.post p {
+  margin-block: 1em;
+  line-height: 1.75;
+}
+
+.post li {
+  line-height: 1.75;
+  margin-top: 0.5em;
+}
+
+.post li::marker {
+  margin-right: 50px;
+}
