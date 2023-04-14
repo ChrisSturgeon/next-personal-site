@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.chrissturgeon.co.uk/sitemap.xml
