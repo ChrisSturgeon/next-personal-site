@@ -39,7 +39,6 @@
   position: fixed;
   background-color: black;
   color: white;
-
   left: 0;
   right: 0;
   bottom: 0;
@@ -60,9 +59,5 @@
   .wrapper .barLinks {
     display: flex;
     gap: 2em;
-  }
-
-  .wrapper button {
-    display: none;
   }
 }

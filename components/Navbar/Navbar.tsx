@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import HamburgerButton from '../HamburgerButton/HamburgerButton';
 
 import styles from '@/styles/Navbar.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -70,7 +71,9 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
-      <button onClick={toggleNav}>M</button>
+
+      <HamburgerButton showMobile={showMobile} toggleNav={toggleNav} />
+
       <AnimatePresence>
         {showMobile && (
           <motion.div

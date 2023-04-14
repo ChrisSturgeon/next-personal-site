@@ -1,0 +1,13 @@
+.hamburger {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
