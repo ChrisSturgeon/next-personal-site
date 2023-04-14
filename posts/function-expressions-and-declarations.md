@@ -1,6 +1,6 @@
 ---
 title: 'Function Expressions and Declarations'
-date: '2022-12-04'
+date: '2023-02-04'
 summary: 'A detailed look at the main differences between creating JavaScript functions with function declarations and function declarations'
 ---
 

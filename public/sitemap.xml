@@ -1,8 +1,34 @@
    <xml version="1.0" encoding="UTF-8">
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>http://www.example.com/foo</loc>
-       <lastmod>2021-06-01</lastmod>
+       <loc>https://www.chrissturgeon.co.uk/</loc>
+       <changefreq>yearly</changefreq>
+       <priority>1</priority>
+       <lastmod>2023-04-14</lastmod>
      </url>
+    <url>
+      <loc>https://www.chrissturgeon.co.uk/about</loc>
+      <changefreq>yearly</changefreq>
+      <priority>5</priority>
+      <lastmod>2023-04-14</lastmod>
+     </url>
+    <url>
+      <loc>https://www.chrissturgeon.co.uk/projects</loc>
+      <changefreq>yearly</changefreq>
+      <priority>5</priority>
+      <lastmod>2023-04-14</lastmod>
+    </url>
+    <url>
+      <loc>https://www.chrissturgeon.co.uk/blog</loc>
+      <changefreq>yearly</changefreq>
+      <priority>5</priority>
+      <lastmod>2023-04-14</lastmod>
+    </url>
+    <url>
+      <loc>https://www.chrissturgeon.co.uk/blog/function-expressions-and-declarations</loc>
+      <changefreq>yearly</changefreq>
+      <priority>5</priority>
+      <lastmod>2023-04-14</lastmod>
+    </url>
    </urlset>
    </xml>

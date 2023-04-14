@@ -40,7 +40,7 @@ export default function Blog({ allPostsData }: allPostsProps) {
           <p>Check out these recent posts:</p>
           <ul>
             {allPostsData.map((post) => {
-              return <PostSummary post={post} />;
+              return <PostSummary post={post} key={post.id} />;
             })}
           </ul>
         </div>
