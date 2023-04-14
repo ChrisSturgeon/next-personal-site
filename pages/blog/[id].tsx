@@ -1,5 +1,5 @@
-import { getAllPostIds, getPostData } from '@/lib/posts';
 import styles from '@/styles/Post.module.css';
+import { getAllPostIds, getPostData } from '@/lib/posts';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Date from '@/components/Date/Date';
@@ -9,6 +9,7 @@ interface postProps {
     title: string;
     id: string;
     date: string;
+    summary: string;
     contentHTML: string;
   };
 }

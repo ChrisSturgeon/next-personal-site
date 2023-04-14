@@ -1,14 +1,14 @@
-import Link from 'next/link';
 import styles from '@/styles/BlogIndex.module.css';
 import { getSortedPostsData } from '@/lib/posts';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Date from '@/components/Date/Date';
+import PostSummary from '@/components/PostSummary/PostSummary';
 
 interface allPostsProps {
   allPostsData: {
     date: string;
     title: string;
+    summary: string;
     id: string;
   }[];
 }
@@ -40,16 +40,7 @@ export default function Blog({ allPostsData }: allPostsProps) {
           <p>Check out these recent posts:</p>
           <ul>
             {allPostsData.map((post) => {
-              return (
-                <li key={post.id}>
-                  <Link href={`/blog/${post.id}`}>
-                    <div>
-                      <span>{post.title}</span> posted{' '}
-                      <Date dateString={post.date} />
-                    </div>
-                  </Link>
-                </li>
-              );
+              return <PostSummary post={post} />;
             })}
           </ul>
         </div>

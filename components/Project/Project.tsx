@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styles from '@/styles/Project.module.css';
+import styles from './Project.module.css';
 
 interface ProjectProps {
   project: {

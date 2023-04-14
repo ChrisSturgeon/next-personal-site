@@ -1,0 +1,36 @@
+.skills {
+  margin-top: 2em;
+}
+
+.skills div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, clamp(50px, 100%, 80px));
+  gap: 1em;
+  justify-content: center;
+}
+
+.skills h2 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.skills svg {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 3px;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.skills svg:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.1));
+}
+
+.skills div {
+  min-width: 302.44px;
+}
+
+.skills ul {
+  line-height: 2;
+  padding-left: 1em;
+}

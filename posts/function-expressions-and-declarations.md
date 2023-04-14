@@ -1,7 +1,7 @@
 ---
 title: 'Function Expressions and Declarations'
-keywords: 'functions'
 date: '2022-12-04'
+summary: 'A detailed look at the main differences between creating JavaScript functions with function declarations and function declarations'
 ---
 
 In this post we're going to look at function **declarations** and function **expressions** in JavaScript, and when to use one instead the other.

@@ -4,8 +4,6 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
-import HeadShot from '../imgs/headshot-modified.png';
-
 const inter = Inter({ subsets: ['latin'] });
 
 const popUp = {

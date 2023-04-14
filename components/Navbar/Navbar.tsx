@@ -1,10 +1,9 @@
+import styles from '@/styles/Navbar.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import HamburgerButton from '../HamburgerButton/HamburgerButton';
-
-import styles from '@/styles/Navbar.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import HamburgerButton from '../HamburgerButton/HamburgerButton';
 
 const slideOut = {
   hidden: {

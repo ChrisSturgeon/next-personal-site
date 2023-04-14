@@ -1,14 +1,10 @@
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import styles from '@/styles/Layout.module.css';
-
 import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
-
 import Navbar from './Navbar/Navbar';
 
+const inter = Inter({ subsets: ['latin'] });
 const variants = {
   initialState: {
     opacity: 0,
