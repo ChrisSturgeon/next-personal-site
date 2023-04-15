@@ -18,11 +18,17 @@ export default function Projects() {
               if (index === 0) {
                 return (
                   <AnimatePresence key={project.name} initial={false}>
-                    <Project project={project} />;
+                    <Project project={project} isPriorityImage={true} />;
                   </AnimatePresence>
                 );
               } else {
-                return <Project key={project.name} project={project} />;
+                return (
+                  <Project
+                    key={project.name}
+                    project={project}
+                    isPriorityImage={false}
+                  />
+                );
               }
             })}
           </div>

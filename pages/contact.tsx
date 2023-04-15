@@ -1,5 +1,6 @@
 import styles from '@/styles/Contact.module.css';
 import Head from 'next/head';
+import ImageCarousel from '@/components/ImageCarousel/ImageCarousel';
 
 export default function Contact() {
   return (
@@ -29,6 +30,7 @@ export default function Contact() {
             </a>
           </li>
         </ul>
+        <ImageCarousel hasPriorityImage={true}></ImageCarousel>
       </div>
     </>
   );

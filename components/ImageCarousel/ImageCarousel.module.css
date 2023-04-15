@@ -1,0 +1,33 @@
+.embla {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.059);
+}
+
+.embla__viewport {
+  position: relative;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla__prev,
+.embla__next {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+}
+
+.embla__prev {
+  left: 0.25em;
+}
+
+.embla__next {
+  right: 0.25em;
+}

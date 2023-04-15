@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Project.module.css';
+import ImageCarousel from '../ImageCarousel/ImageCarousel';
 
 interface ProjectProps {
   project: {
@@ -10,6 +12,7 @@ interface ProjectProps {
     live: string;
     repo: string;
   };
+  isPriorityImage: boolean;
 }
 
 const cardVariants = {
@@ -28,7 +31,7 @@ const cardVariants = {
   },
 };
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({ project, isPriorityImage }: ProjectProps) {
   return (
     <motion.div
       variants={cardVariants}
@@ -39,7 +42,16 @@ export default function Project({ project }: ProjectProps) {
     >
       <h2>{project.name}</h2>
       <p> {project.about}</p>
-      <img src={project.screenshot}></img>
+      {/* <Image
+        priority={isPriorityImage}
+        src={`/${project.screenshot}`}
+        alt="headhsot"
+        width={0}
+        height={0}
+        sizes="100%"
+        style={{ width: '100%', height: 'auto' }}
+      ></Image> */}
+      <ImageCarousel hasPriorityImage={false} />
       <div className="content">
         <p>Challenges overcome included:</p>
         {project.challenges && (
