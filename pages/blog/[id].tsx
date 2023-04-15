@@ -37,6 +37,7 @@ export default function Post({ postData }: postProps) {
     <>
       <Head>
         <title>{postData.title}</title>
+        <meta name="description" content={postData.summary}></meta>
       </Head>
       <div className={styles.postWrapper}>
         <article className={styles.post}>

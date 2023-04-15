@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: 'Session Hub',
-    screenshot: './imgs/SessionHub.png',
+    screenshot: './imgs/session-hub/home-1.png',
     about:
       'An SPA built with React consuming a REST API built with Express. The project aim was to create a social media site where users can create accounts, add friends, and post about their recent surfing, windsurfing, kitesurfing etc. sessions for other users to like and comment on. ',
     challenges: [
