@@ -1,16 +1,9 @@
 .carousel {
   display: grid;
-  /* height: calc(auto + 20px); */
 }
 
 .embla {
   overflow: hidden;
-  /* background-image: linear-gradient(
-    90deg,
-    var(--light-green),
-    var(--medium-green)
-  ); */
-  /* border: 1px solid rgb(225, 225, 225); */
   border-radius: 5px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.075);
   position: relative;
@@ -44,7 +37,7 @@
 
 .embla__prev:hover svg g g polyline,
 .embla__next:hover svg g g polyline {
-  stroke: var(--light-green);
+  stroke: rgb(213, 213, 213);
 }
 
 .embla__prev {

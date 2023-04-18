@@ -6,22 +6,22 @@ export const projectsData = [
       {
         isPriority: true,
         ref: '/imgs/session-hub/home-1.png',
-        alt: 'Home page',
+        alt: 'The home page of Session Hub showing the users My Hub section and recent posts of their friends',
       },
       {
         isPriority: false,
         ref: '/imgs/session-hub/session-1.png',
-        alt: 'Session page',
+        alt: 'A session page showing a surfing at Bigbury session with a location map on the right hand side',
       },
       {
         isPriority: false,
         ref: '/imgs/session-hub/profile-1.png',
-        alt: 'Profile page',
+        alt: 'A  profile page for the Example User with their profile picture, about section and recent posts',
       },
       {
         isPriority: false,
         ref: '/imgs/session-hub/mobile-1.png',
-        alt: 'Mobile page',
+        alt: 'Two screenshots of Session Hub viewed in a mobile viewport. The left is a session of Windsurfing at Rustington Beach and the right a list of the users friends',
       },
     ],
     about:
@@ -42,8 +42,18 @@ export const projectsData = [
     images: [
       {
         isPriority: false,
-        ref: '/imgs/RedoneitHomepage.png',
-        alt: 'RedoneIt Homepage',
+        ref: '/imgs/redoneit/home-1.png',
+        alt: 'RedoneIt Homepage showing recent posts from a selection of different subreddits',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/redoneit/subreddit-1.png',
+        alt: 'Technology subreddit page screenshot showing recent posts and the about sidebar with subreddit rules',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/redoneit/mobile-selection.png',
+        alt: 'Three screenshots of redoneit all viewed in a mobile viewport. From left to right these are: the homepage, the navigation menu, and the learn programming subreddit',
       },
     ],
     about:
@@ -62,8 +72,18 @@ export const projectsData = [
     images: [
       {
         isPriority: false,
-        ref: '/imgs/RESTCountries.png',
-        alt: 'REST Homepage',
+        ref: '/imgs/RESTCountries/home-light.png',
+        alt: 'REST Homepage in light-mode colour scheme',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/RESTCountries/home-dark.png',
+        alt: 'REST Homepage in dark-mode colour scheme',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/RESTCountries/mobile-selection.png',
+        alt: 'Country detail pages for Brazil and Portugal in mobile viewport',
       },
     ],
     about:
@@ -80,12 +100,21 @@ export const projectsData = [
 
   {
     name: 'Battle Ships',
-
     images: [
       {
         isPriority: false,
-        ref: '/imgs/BattleShips.png',
-        alt: 'Battleships Homepage',
+        ref: '/imgs/battleships/battling.png',
+        alt: 'An underway game of battleships',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/battleships/positioning.png',
+        alt: 'Players positioning their ships in battleships',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/battleships/winner.png',
+        alt: 'A game of battleships where player 1 has defeated their oponent',
       },
     ],
     about:
@@ -103,8 +132,23 @@ export const projectsData = [
     images: [
       {
         isPriority: false,
-        ref: '/imgs/WheresFry.png',
-        alt: 'Wheres Fry Homepage',
+        ref: '/imgs/wheres-fry/underway.png',
+        alt: 'A game of Wheres Fry underway with 35 seconds on the clock',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/wheres-fry/selecting.png',
+        alt: 'A game of Wheres Fry underway with the user selecting Nibler',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/wheres-fry/scores.png',
+        alt: 'The top and recent scoreboards display on mobile viewport with a iPhone SE frame',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/wheres-fry/rules.png',
+        alt: 'A page displaying the rules of the game Wheres Fry',
       },
     ],
     about:

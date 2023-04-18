@@ -44,7 +44,19 @@
 
 .project ul {
   list-style-position: inside;
-  line-height: 1.75;
+  line-height: 1.75em;
+}
+
+.project ul li {
+  padding-block: 0.25em;
+}
+
+.project ul li:first-of-type {
+  padding-top: 0;
+}
+
+.project ul li:last-of-type {
+  padding-bottom: 0;
 }
 
 .project .links {

@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
-import { useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
-import CarouselCounter from './CarouselCounter/CarouselCounter';
 import styles from './ImageCarousel.module.css';
 
 interface ImageCarouselProps {
@@ -66,7 +64,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                     fill="none"
                     id="Left"
                     points="15.5 5 8.5 12 15.5 19"
-                    stroke="#a7a7a7"
+                    stroke="#ffffff"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
@@ -89,7 +87,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                     fill="none"
                     id="Right"
                     points="8.5 5 15.5 12 8.5 19"
-                    stroke="#a7a7a7"
+                    stroke="#ffffff"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
