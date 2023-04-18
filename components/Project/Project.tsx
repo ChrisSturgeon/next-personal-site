@@ -6,13 +6,16 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 interface ProjectProps {
   project: {
     name: string;
-    screenshot: string;
+    images: {
+      isPriority: boolean;
+      ref: string;
+      alt: string;
+    }[];
     about: string;
     challenges: string[];
     live: string;
     repo: string;
   };
-  isPriorityImage: boolean;
 }
 
 const cardVariants = {
@@ -31,7 +34,7 @@ const cardVariants = {
   },
 };
 
-export default function Project({ project, isPriorityImage }: ProjectProps) {
+export default function Project({ project }: ProjectProps) {
   return (
     <motion.div
       variants={cardVariants}
@@ -42,16 +45,8 @@ export default function Project({ project, isPriorityImage }: ProjectProps) {
     >
       <h2>{project.name}</h2>
       <p> {project.about}</p>
-      {/* <Image
-        priority={isPriorityImage}
-        src={`/${project.screenshot}`}
-        alt="headhsot"
-        width={0}
-        height={0}
-        sizes="100%"
-        style={{ width: '100%', height: 'auto' }}
-      ></Image> */}
-      <ImageCarousel hasPriorityImage={false} />
+
+      <ImageCarousel images={project.images} />
       <div className="content">
         <p>Challenges overcome included:</p>
         {project.challenges && (

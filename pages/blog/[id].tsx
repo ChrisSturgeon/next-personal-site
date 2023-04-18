@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export default function Post({ postData }: postProps) {
-  return (
+  return ( 
     <>
       <Head>
         <title>{postData.title}</title>

@@ -2,6 +2,28 @@ export const projectsData = [
   {
     name: 'Session Hub',
     screenshot: './imgs/session-hub/home-1.png',
+    images: [
+      {
+        isPriority: true,
+        ref: '/imgs/session-hub/home-1.png',
+        alt: 'Home page',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/session-hub/session-1.png',
+        alt: 'Session page',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/session-hub/profile-1.png',
+        alt: 'Profile page',
+      },
+      {
+        isPriority: false,
+        ref: '/imgs/session-hub/mobile-1.png',
+        alt: 'Mobile page',
+      },
+    ],
     about:
       'An SPA built with React consuming a REST API built with Express. The project aim was to create a social media site where users can create accounts, add friends, and post about their recent surfing, windsurfing, kitesurfing etc. sessions for other users to like and comment on. ',
     challenges: [
@@ -17,8 +39,13 @@ export const projectsData = [
 
   {
     name: 'RedoneIt',
-    screenshot: './imgs/RedoneitHomepage.png',
-    altText: 'Screenshot of RedoneIt front page',
+    images: [
+      {
+        isPriority: false,
+        ref: '/imgs/RedoneitHomepage.png',
+        alt: 'RedoneIt Homepage',
+      },
+    ],
     about:
       'A site to display information about countries with data fetched from the REST Countries API built as a challenge from Front End Mentor.',
     challenges: [
@@ -32,8 +59,13 @@ export const projectsData = [
   },
   {
     name: 'Where in the World?',
-    screenshot: './imgs/RESTCountries.png',
-    altText: 'Screenshot of the Where in the World front page',
+    images: [
+      {
+        isPriority: false,
+        ref: '/imgs/RESTCountries.png',
+        alt: 'REST Homepage',
+      },
+    ],
     about:
       'A site to display information about countries with data fetched from the REST Countries API built as a challenge from Front End Mentor. I decided to undertake this project in order to focus upon improving my knowledge of testing and accessibility, as well as dig under the hood of React and dabble with some CSS-in-JS using Styled Components.',
     challenges: [
@@ -48,8 +80,14 @@ export const projectsData = [
 
   {
     name: 'Battle Ships',
-    screenshot: './imgs/BattleShips.png',
-    altText: 'Screenshot of Battle Ships gameboard',
+
+    images: [
+      {
+        isPriority: false,
+        ref: '/imgs/BattleShips.png',
+        alt: 'Battleships Homepage',
+      },
+    ],
     about:
       'A BattleShips style game created with Vanilla JS to greater my understanding of OOP, Jest and TDD.',
     challenges: [
@@ -62,8 +100,13 @@ export const projectsData = [
   },
   {
     name: "Where's Fry?",
-    screenshot: './imgs/WheresFry.png',
-    altText: "Screenshot of Where's Fry image searching game",
+    images: [
+      {
+        isPriority: false,
+        ref: '/imgs/WheresFry.png',
+        alt: 'Wheres Fry Homepage',
+      },
+    ],
     about:
       "The photo-tagging project from the Javascript and the Backend module of The Odin Project. The aim was to create an app using React and Firebase in which users race against the clock to find and correctly identify characters from a Where's Wally style photo to try and top a leaderboard stored on the backend.",
     challenges: [

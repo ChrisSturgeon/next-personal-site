@@ -30,7 +30,6 @@ export default function Contact() {
             </a>
           </li>
         </ul>
-        <ImageCarousel hasPriorityImage={true}></ImageCarousel>
       </div>
     </>
   );
