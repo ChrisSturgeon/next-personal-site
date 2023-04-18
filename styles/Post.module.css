@@ -56,3 +56,9 @@
   font-size: 1rem;
   border-radius: 3px;
 }
+
+.post a,
+.post a:visited {
+  text-decoration: underline 2px var(--light-green);
+  text-underline-offset: 2px;
+}

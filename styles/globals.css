@@ -2,7 +2,6 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
   --dark-blue: #010b40;
   --medium-blue: #4f5873;
   --dark-green: #127357;
@@ -65,7 +64,7 @@ pre {
 code[class*='language-'],
 pre[class*='language-'] {
   color: #d6deeb;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: var(--font-mono);
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -212,4 +211,8 @@ pre[class*='language-'] {
 
 .token.italic {
   font-style: italic;
+}
+
+.token.comment {
+  color: var(--medium-green);
 }
