@@ -6,6 +6,7 @@ export default function About() {
   return (
     <>
       <Head>
+        <meta name="description" content="Chris Sturgeon - About" />
         <title>Chris Sturgeon - About</title>
       </Head>
       <div className={styles.wrapper}>

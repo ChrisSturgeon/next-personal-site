@@ -6,6 +6,7 @@ export default function Contact() {
   return (
     <>
       <Head>
+        <meta name="description" content="Chris Sturgeon - Contact" />
         <title>Chris Sturgeon - Contact</title>
       </Head>
       <div className={styles.wrapper}>

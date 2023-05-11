@@ -8,6 +8,7 @@ export default function Projects() {
   return (
     <>
       <Head>
+        <meta name="description" content="Chris Sturgeon - Projects" />
         <title>Chris Sturgeon - Projects</title>
       </Head>
       <div className={styles.wrapper}>
