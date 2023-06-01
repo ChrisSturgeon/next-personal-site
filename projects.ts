@@ -95,7 +95,7 @@ export const projectsData = [
       'Testing with asynchronous user events with React Testing Library and Jest',
     ],
     live: 'https://chrissturgeon.github.io/REST-Country-App/#/all',
-    repo: 'https://github.com/ChrisSturgeon/odin-shopping-cart',
+    repo: 'https://github.com/ChrisSturgeon/REST-Country-App',
   },
 
   {
