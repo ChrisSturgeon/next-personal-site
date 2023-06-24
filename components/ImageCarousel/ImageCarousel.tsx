@@ -41,8 +41,8 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                     priority={image.isPriority}
                     src={image.ref}
                     alt={image.alt}
-                    width={0}
-                    height={0}
+                    width={1920}
+                    height={1280}
                     sizes="100%"
                     style={{ width: '100%', height: '100%', boxShadow: 'none' }}
                   ></Image>
